@@ -134,7 +134,7 @@ def drawgroup(screen,blue,bluelist,blueamount,spacebetween,blueimgrect):
     for x in range(blueamount):
         bluelist.append(blue(x*blueimgrect.height+top+spacebetween*x))
 
-with open('rvghighscore.txt') as f:
+with open('rvbhighscore.txt') as f:
     highscore=f.read()
 highscore=int(highscore)
 
@@ -253,7 +253,7 @@ while True:
 
     else:
         s.enddrawscore(bluedeaths)
-        with open('rvghighscore.txt','w') as f:
+        with open('rvbhighscore.txt','w') as f:
             f.write(str(highscore))
 
     p.display.update()
